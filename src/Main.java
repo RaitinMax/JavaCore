@@ -9,10 +9,10 @@ public class Main {
         GameProgress gp1 = new GameProgress(95, 3, 12, 5.00);
         GameProgress gp2 = new GameProgress(85, 4, 23, 6.00);
         GameProgress gp3 = new GameProgress(75, 5, 34, 7.00);
-        File newFile1 = new File("C:\\Program Files\\Games\\temp\\saveData1.dat");
-        File newFile2 = new File("C:\\Program Files\\Games\\temp\\saveData2.dat");
-        File newFile3 = new File("C:\\Program Files\\Games\\temp\\saveData3.dat");
-        File newZip = new File("C:\\Program Files\\Games\\temp\\saveZip.zip");
+        File newFile1 = new File("C:\\Program Files\\Games\\savegames\\aveData1.dat");
+        File newFile2 = new File("C:\\Program Files\\Games\\savegames\\saveData2.dat");
+        File newFile3 = new File("C:\\Program Files\\Games\\savegames\\saveData3.dat");
+        File newZip = new File("C:\\Program Files\\Games\\savegames\\saveZip.zip");
         saveData(gp1, newFile1);
         saveData(gp2, newFile2);
         saveData(gp3, newFile3);

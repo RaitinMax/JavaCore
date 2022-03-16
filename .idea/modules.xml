@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/3.1 Install program/3.1 Install program.iml" filepath="$PROJECT_DIR$/3.1 Install program/3.1 Install program.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.3. Download/3.3. Download.iml" filepath="$PROJECT_DIR$/3.3. Download/3.3. Download.iml" />
       <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Install/Install.iml" filepath="$PROJECT_DIR$/Install/Install.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaCore.iml" filepath="$PROJECT_DIR$/JavaCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OtherInstall/OtherInstall.iml" filepath="$PROJECT_DIR$/OtherInstall/OtherInstall.iml" />
       <module fileurl="file://$PROJECT_DIR$/Population census/Population census.iml" filepath="$PROJECT_DIR$/Population census/Population census.iml" />
       <module fileurl="file://$PROJECT_DIR$/SaveFile/SaveFile.iml" filepath="$PROJECT_DIR$/SaveFile/SaveFile.iml" />
       <module fileurl="file://$PROJECT_DIR$/Worker/Worker.iml" filepath="$PROJECT_DIR$/Worker/Worker.iml" />
       <module fileurl="file://$PROJECT_DIR$/Working with numbers/Working with numbers.iml" filepath="$PROJECT_DIR$/Working with numbers/Working with numbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tryInstall/tryInstall.iml" filepath="$PROJECT_DIR$/tryInstall/tryInstall.iml" />
     </modules>
   </component>
 </project>

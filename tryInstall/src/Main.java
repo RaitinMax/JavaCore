@@ -1,4 +1,29 @@
-package PACKAGE_NAME;
+
+import java.io.*;
 
 public class Main {
+    public static void main(String[] args) {
+        Files example = new Files();
+
+        File gamesSrc = example.makeDir("C:\\Program Files\\Games", "src");
+        File gamesRes = example.makeDir("C:\\Program Files\\Games", "res");
+        File gamesSaveGames = example.makeDir("C:\\Program Files\\Games", "savegames");
+        File gamesTemp = example.makeDir("C:\\Program Files\\Games", "temp");
+
+        File gamesSrcMain = example.makeDir(gamesSrc, "main");
+        File gamesSrcTest = example.makeDir(gamesSrc, "test");
+
+        File gamesResDrawables = example.makeDir(gamesRes, "drawables");
+        File gamesResVectors = example.makeDir(gamesRes, "vectors");
+        File gamesResIcons = example.makeDir(gamesRes, "icons");
+        try {
+            File tempLogTxt = example.makeFile(gamesTemp, "log.txt");
+            File mainMainJava = example.makeFile(gamesSrcMain, "Main.java");
+            File mainUtilsJava = example.makeFile(gamesSrcMain, "Utils.java");
+            example.writeLogFile(tempLogTxt);
+        } catch (NullPointerException e) {
+            System.out.println("Не удалось создать файлы\n");
+            System.out.println(example.logger.getLog());
+        }
+    }
 }

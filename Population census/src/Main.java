@@ -17,6 +17,7 @@ public class Main {
         }
         countNonAdult(persons);
         militaryList(persons);
+        highDegree(persons);
 
     }
 
@@ -32,6 +33,14 @@ public class Main {
                 .filter(persons -> persons.getSex().equals(Sex.MAN))
                 .filter(persons -> persons.getAge() > 18 && persons.getAge() < 27)
                 .map(name -> name.getName()).collect(Collectors.toList());
+        System.out.println(collect);
+    }
+    public static void highDegree(Collection<Person> person){
+        List<String> collect = person.stream()
+                .filter(persons -> persons.getAge()>18 && persons.getAge()<65&&persons.getSex().equals(Sex.MAN)||
+                        persons.getAge()>18 && persons.getAge()<60&&persons.getSex().equals(Sex.WOMAN)   )
+                .sorted(Comparator.comparing(person1 -> person1.getFamily()))
+                .map(name -> name.getFamily()).collect(Collectors.toList());
         System.out.println(collect);
     }
 }
