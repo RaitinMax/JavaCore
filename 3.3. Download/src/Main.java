@@ -1,9 +1,11 @@
+import java.io.FileInputStream;
+import java.util.zip.ZipEntry;
+
 public class Main {
     private static Object ZipInputStream;
 
     public static void main(String[] args) {
-        (ZipInputStream zin = new ZipInputStream(new
-                FileInputStream("output.zip"))) {
+   t     (ZipInputStream zin = new ZipInputStream(new FileInputStream("output.zip"))) {
             ZipEntry entry;
             String name;
             while ((entry = zin.getNextEntry()) != null) {

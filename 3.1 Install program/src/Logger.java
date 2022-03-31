@@ -1,4 +1,7 @@
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -9,12 +12,23 @@ public class Logger {
 
     public void append(String string) {
         String dateString = sdf.format(date);
-        str.append(dateString);
+        str.append(string);
+        str.append("in"+dateString);
         str.append(" ");
-        str.append("has been created"+"\n");
+        str.append("\n");
     }
 
-    public  void createLog(File file) {
+    public void createLog(File file) {
+        String string = str.toString();
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+            writer.write(string);
+            writer.flush();
+        } catch (IOException e) {
+            append(string);
+        }
+    }
 
+    public String getLog() {
+        return str.toString();
     }
 }

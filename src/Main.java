@@ -1,5 +1,4 @@
 import java.io.*;
-import java.io.File;
 import java.io.IOException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
@@ -9,10 +8,11 @@ public class Main {
         GameProgress gp1 = new GameProgress(95, 3, 12, 5.00);
         GameProgress gp2 = new GameProgress(85, 4, 23, 6.00);
         GameProgress gp3 = new GameProgress(75, 5, 34, 7.00);
-        File newFile1 = new File("C:\\Program Files\\Games\\savegames\\aveData1.dat");
-        File newFile2 = new File("C:\\Program Files\\Games\\savegames\\saveData2.dat");
-        File newFile3 = new File("C:\\Program Files\\Games\\savegames\\saveData3.dat");
-        File newZip = new File("C:\\Program Files\\Games\\savegames\\saveZip.zip");
+        String path = "C:" + File.separator + "Program Files" + File.separator + "Games"+File.separator + "savegames";
+        File newFile1 = new File(path,"saveData1.dat");
+        File newFile2 = new File(path,"saveData2.dat");
+        File newFile3 = new File(path,"saveData3.dat");
+        File newZip = new File(path,"saveZip.zip");
         saveData(gp1, newFile1);
         saveData(gp2, newFile2);
         saveData(gp3, newFile3);

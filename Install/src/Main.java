@@ -41,17 +41,17 @@ public class Main {
 
     public static void mkdir(File dir) {
             if(dir.mkdirs()){
-                str.append(dir.getPath() + " has been created\n");
+                str.append(dir.getPath());
             }
     }
 
     public static void createNewFile(File newFile)  {
         try {
             if (newFile.createNewFile()) {
-                str.append(newFile.getName() + " has been created\n");
+                str.append(newFile.getName());
             }
         } catch (IOException e) {
-            str.append(newFile.getName() +" has been tried create. Something go wrong");
+            str.append(newFile.getName());
         }
     }
 }
